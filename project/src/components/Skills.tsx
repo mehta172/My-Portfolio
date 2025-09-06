@@ -21,34 +21,40 @@ const Skills = () => {
     return () => observer.disconnect();
   }, []);
 
-  const skillCategories = [
+  const technologyCategories = [
     {
       title: "Design & Verification",
-      skills: [
-        { name: "Verilog/SystemVerilog", level: 95 },
-        { name: "VHDL", level: 90 },
-        { name: "UVM", level: 85 },
-        { name: "System Verilog Assertions", level: 88 }
+      technologies: [
+        "Verilog",
+        "RTL Design",
+        "Digital Electronics",
+        "System Verilog", 
+        "UVM",
+        "Perl",
+        "Lint",
+        "CDC"
+      ]
+    },
+    {
+      title: "Protocols",
+      technologies: [
+        "AXI",
+        "UART", 
+        "SPI",
+        "I2C"
       ]
     },
     {
       title: "EDA Tools",
-      skills: [
-        { name: "Synopsys DC", level: 92 },
-        { name: "Cadence Genus", level: 88 },
-        { name: "Mentor Graphics", level: 85 },
-        { name: "Xilinx Vivado", level: 90 }
-      ]
-    },
-    {
-      title: "Specializations",
-      skills: [
-        { name: "Digital Signal Processing", level: 87 },
-        { name: "Memory Design", level: 83 },
-        { name: "Low Power Design", level: 89 },
-        { name: "Clock Domain Crossing", level: 91 }
+      technologies: [
+        "Xilinx Vivado",
+        "Synopsys VCS",
+        "Quartus Prime", 
+        "QuestaSim",
+        "Spyglass"
       ]
     }
+    
   ];
 
   return (
@@ -68,7 +74,7 @@ const Skills = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {skillCategories.map((category, categoryIndex) => (
+          {technologyCategories.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
               className={`transition-all duration-1000 ${
@@ -81,28 +87,14 @@ const Skills = () => {
                   {category.title}
                 </h3>
                 
-                <div className="space-y-6">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="group">
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="text-gray-300 font-medium group-hover:text-blue-400 transition-colors">
-                          {skill.name}
-                        </span>
-                        <span className="text-gray-400 text-sm">
-                          {skill.level}%
-                        </span>
-                      </div>
-                      
-                      <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
-                        <div
-                          className="h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full transform transition-all duration-1000 ease-out"
-                          style={{
-                            width: isVisible ? `${skill.level}%` : '0%',
-                            transitionDelay: `${(categoryIndex * 4 + skillIndex) * 100 + 800}ms`
-                          }}
-                        ></div>
-                      </div>
-                    </div>
+                <div className="flex flex-wrap gap-3">
+                  {category.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="px-4 py-2 bg-blue-600/20 text-blue-300 text-sm rounded-full border border-blue-500/30 hover:bg-blue-600/30 hover:border-blue-400/50 transition-all duration-300 cursor-default"
+                    >
+                      {tech}
+                    </span>
                   ))}
                 </div>
               </div>
@@ -110,12 +102,10 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="mt-16 grid md:grid-cols-4 gap-6">
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
           {[
-            { label: "Projects Completed", value: "50+" },
-            { label: "Years Experience", value: "5+" },
-            { label: "Research Papers", value: "12" },
-            { label: "Patents Filed", value: "3" }
+            { label: "Projects Completed", value: "10+" },
+            { label: "Years Experience", value: "1.7+" }
           ].map((stat, index) => (
             <div
               key={index}

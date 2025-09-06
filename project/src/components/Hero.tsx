@@ -141,22 +141,22 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div>
+        <div className="container mx-auto mb-24 mt-1 px-6 text-center">
           <h1 className={`text-5xl md:text-5xl font-bold text-white mb-8 transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
-            <span className="text-blue-400">RTL Design</span>
-            <br />
-            <span className="text-blue-400">&</span>
-            <br />
-            <span className="text-blue-400">Verification</span> 
+            <span className="text-blue-400">Design &</span>
+            
+            <span className="text-blue-400"> Verification</span> 
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
               Engineer
             </span>
           </h1>
+        </div>
+        <div>
           <br />
-          <p className={`text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto transition-all duration-1000 delay-300 ${
+          <p className={`text-xl md:text-2xl text-gray-300 mb-0 mt-32 max-w-3xl mx-auto transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
             Designing the future of semiconductor technology with cutting-edge
@@ -169,13 +169,13 @@ const Hero = () => {
           }`}>
             <a
               href="#projects"
-              className="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-full hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
+              className="px-8 mx-2 mt-4 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-full hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
             >
               View My Work
             </a>
             <a
               href="#contact"
-              className="px-8 py-4 border-2 border-purple-500 text-purple-400 rounded-full hover:bg-purple-500 hover:text-white transition-all duration-300 transform hover:scale-105"
+              className="px-8 mx-2 mt-4 py-4 border-2 border-purple-500 text-purple-400 rounded-full hover:bg-purple-500 hover:text-white transition-all duration-300 transform hover:scale-105"
             >
               Get In Touch
             </a>

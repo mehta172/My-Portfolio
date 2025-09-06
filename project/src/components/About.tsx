@@ -26,7 +26,7 @@ const About = () => {
     {
       icon: <Cpu className="text-blue-400" size={32} />,
       title: "Digital Design Expert",
-      description: "Specialized in RTL design, verification, and synthesis with 5+ years experience"
+      description: "Specialized in RTL design, Functional verification, and synthesis with 1.5+ years experience"
     },
     {
       icon: <Zap className="text-cyan-400" size={32} />,
@@ -76,9 +76,7 @@ const About = () => {
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
           }`}>
             <p className="text-gray-300 text-lg leading-relaxed">
-              I'm a dedicated RTL design engineer with a passion for creating innovative semiconductor 
-              solutions. My expertise spans across RTL design, digital circuit implementation, and 
-              optimization, with a focus on high-performance and low-power systems.
+              I am a passionate Digital Design & Verification Engineer with hands-on experience in RTL Design, SystemVerilog, UVM, FPGA Prototyping, and ASIC Development. My expertise lies in developing high-performance digital circuits, verifying complex designs, and optimizing hardware for speed, power, and area efficiency.
             </p>
             
             <div className="space-y-4">

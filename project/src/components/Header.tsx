@@ -29,7 +29,7 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div className="text-2xl font-bold text-white">
-            <span className="text-blue-400">RTL</span> Design & <span className="text-blue-400">Verification</span> Engineer
+            <span className="text-blue-400">Design</span> & <span className="text-blue-400">Verification</span> Engineer
           </div>
           
           {/* Desktop Navigation */}

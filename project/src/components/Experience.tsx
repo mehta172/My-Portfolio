@@ -24,34 +24,35 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Senior VLSI Design Engineer",
-      company: "TechChip Semiconductors",
-      location: "Silicon Valley, CA",
-      duration: "2021 - Present",
-      description: "Leading the design and verification of next-generation processor cores, managing a team of 8 engineers, and driving architectural decisions for 5nm technology node implementations.",
+      title: "Design & Verification Engineer",
+      company: "Chipspirit Technologies Pvt. Ltd.",
+      location: "Ambala, Haryana",
+      duration: "August-2024 - Present",
+      description: "I have contributed to both Design Verification and RTL Design projects.",
       achievements: [
-        "Architected and delivered 3 major processor IPs generating $50M+ revenue",
-        "Reduced power consumption by 35% through advanced low-power techniques",
-        "Mentored 12 junior engineers, improving team productivity by 40%",
-        "Led cross-functional collaboration with software and system teams"
+        "Developed AXI Stream based Asynchronous FIFO with the Gray pointer synchronized logic for internal project",
+        "Developed various complex Designs and debug various issues on a Client project",
+        "Developed UVM testbench environment for Funtional Verification of complex ASIC designs and achieved 99.5% Functional coverage",
+        "Developed UVM testbench environment for functional verification of FPGA based internal projet and achieved 95% Functional coverage",
+        "Performed synthesis, linting and CDC analysis for design validation"
       ],
-      technologies: ["SystemVerilog", "UVM", "Synopsys", "ARM Architecture", "5nm Process"]
+      technologies: ["Verilog","SystemVerilog", "UVM", "Synopsys VCS", "Vivado", "QuestaSim"]
     },
     {
-      title: "VLSI Verification Engineer",
-      company: "GlobalSemi Corp",
-      location: "Austin, TX",
-      duration: "2019 - 2021",
+      title: "Design & Verification Intern",
+      company: "Chipspirit Technologies Pvt. Ltd.",
+      location: "Ambala, Haryana",
+      duration: "Jan-2024 - July-2024",
       description: "Specialized in complex SoC verification, developing comprehensive testbenches and ensuring first-silicon success for high-volume consumer products.",
       achievements: [
-        "Achieved 99.5% functional coverage on 3 major SoC projects",
+        "Achieved 99.5% functional coverage on 2 major SoC projects",
         "Developed reusable UVM-based verification IP reducing project time by 30%",
         "Identified and resolved 200+ critical bugs before tape-out",
         "Established verification methodology adopted company-wide"
       ],
-      technologies: ["UVM", "SystemVerilog", "Cadence", "Formal Verification", "Coverage Analysis"]
+      technologies: ["UVM", "SystemVerilog", "Functionall Verification", "Coverage Analysis", "Synopsys VCS", "Verdi", "QuestaSim"]
     },
-    {
+    /*{
       title: "Digital Design Engineer",
       company: "StartupChip Inc",
       location: "San Jose, CA",
@@ -64,7 +65,7 @@ const Experience = () => {
         "Collaborated with analog team for mixed-signal integration"
       ],
       technologies: ["Verilog", "Synopsys DC", "Primetime", "7nm PDK", "DSP Design"]
-    }
+    }*/
   ];
 
   return (

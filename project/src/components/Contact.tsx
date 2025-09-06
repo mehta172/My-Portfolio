@@ -45,19 +45,19 @@ const Contact = () => {
     {
       icon: <Mail className="text-blue-400" size={24} />,
       label: "Email",
-      value: "john.vlsi@email.com",
-      href: "mailto:john.vlsi@email.com"
+      value: "mehtatushar172@gmail.com",
+      href: "mailto:mehtatushar172@gmail.com"
     },
     {
       icon: <Phone className="text-cyan-400" size={24} />,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 8708791290",
+      href: "tel:+91 8708791290"
     },
     {
       icon: <MapPin className="text-purple-400" size={24} />,
       label: "Location",
-      value: "Silicon Valley, CA",
+      value: "Ambala, Haryana",
       href: "#"
     }
   ];
@@ -66,13 +66,13 @@ const Contact = () => {
     {
       icon: <Github size={24} />,
       label: "GitHub",
-      href: "#",
+      href: "https://github.com/mehta172",
       color: "hover:text-gray-400"
     },
     {
       icon: <Linkedin size={24} />,
       label: "LinkedIn", 
-      href: "#",
+      href: "https://www.linkedin.com/in/tushar-mehta-b2b7541ba/",
       color: "hover:text-blue-400"
     }
   ];
